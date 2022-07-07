@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    background:url('/images/bg-intro-desktop.png'),hsl(0, 100%, 74%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    font-weight: 700;
+    color: white;
+    
+}
+p{
+    font-weight: 400;
+    color: white;
+    
+}
+.try{
+    font-weight: 700;
+}
+.btn{
+    font-weight: 400px;
+    color: white;
+    height:max-content;
+    background: hsl(248, 32%, 49%);
+    box-shadow: rgb(70, 69, 69) 3px 5px 20px;
+}
+.btn:hover{
+    background: hsl(248, 46%, 30%);
+    color: white;
+}
+.btn:focus{
+    background: hsl(248, 46%, 30%);
+    color: white;
+    box-shadow: rgb(70, 69, 69) 3px 5px 20px;
+}
+.sub{
+    font-weight: 500;
+    background: hsl(154, 59%, 51%);
+    color: white;
+    height: 50px;
+}
+.sub:hover{
+    background: hsl(154, 75%, 71%);
+}
+.sub:focus{
+    background: hsl(154, 75%, 71%);
+    color: white;
+}
+
+.text{
+    margin-top: 155px;
+    text-align: left;
+}
+
+.colored{
+    color: red;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+.colored:hover{
+    color: red;
+    text-shadow: rgb(133, 133, 133) 1px 1px 2px;
+}
+.terms{
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+    font-weight: 400;
+}
+input[type="password"]:focus{
+    color: hsl(249, 10%, 26%);
+    border: 1px solid hsl(249, 10%, 26%);
+    box-shadow: none;
+}
+input[type="text"]:focus{
+    color: hsl(249, 10%, 26%);
+    border: 1px solid hsl(249, 10%, 26%);
+    box-shadow: none;
+}
+
+@media screen and (max-width: 576px) {
+    .text{
+        text-align: center;
+        
+    }
+    body{
+        background: url("/images/bg-intro-mobile.png"),hsl(0, 100%, 74%);
+    }
+}
