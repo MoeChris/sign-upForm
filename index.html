@@ -29,11 +29,7 @@
             ><span class="try">Try it free 7 days</span> then $20/mo.
             Thereafter</a
           >
-          <form
-            action="#"
-            class="card card-body col-12"
-            onsubmit="goingNoWhere(event)"
-          >
+          <form class="card card-body col-12" onsubmit="goingNoWhere(event)">
             <div class="form-group">
               <input
                 type="text"
@@ -114,7 +110,7 @@
       var error_LName = document.querySelector(".error_LName");
       var error_Email = document.querySelector(".error_Email");
       var error_Password = document.querySelector(".error_Password");
-      var reg = "/^[a-zA-Z]_-.@[a-zA-Z]{4,6}.[a-zA-Z]{2,3}$/g";
+      var reg = /^([a-zA-Z]{5,}\.[a-zA-Z]{0,}@[a-zA-Z]{4,6}\.[a-zA-Z]{2,3})$/g;
 
       function Submit() {
         if (!firstName) {
@@ -134,12 +130,12 @@
           error_Email.style.textAlign = "right";
         }
         if (email != email.match(reg)) {
-          error_Email.innerHTML = "email@example.com";
+          error_Email.innerHTML = "email.email@example.com";
           error_Email.style.color = "red";
           error_Email.style.textAlign = "right";
         }
 
-        if (!password) {
+        if (password == "") {
           error_Password.innerHTML = "Password cannot be empty";
           error_Password.style.color = "red";
           error_Password.style.textAlign = "right";
