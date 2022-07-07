@@ -10,7 +10,7 @@
 
 body{
     background-color: hsl(0, 100%, 74%);
-    background-image: url("https://ibb.co/gj93P8Z");    
+    background-image: url("https://github.com/MoeChris/sign-upForm/blob/9935a0c7b92ffa5ce7f1d261ae37a8a60843e6f3/images/bg-intro-desktop.png?raw=true");    
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -97,6 +97,6 @@ input[type="text"]:focus{
     }
     body{
         background-color: hsl(0, 100%, 74%);
-        background-image: url("https://ibb.co/frBmYbj");
+        background-image: url("https://raw.githubusercontent.com/MoeChris/sign-upForm/9935a0c7b92ffa5ce7f1d261ae37a8a60843e6f3/images/bg-intro-mobile.png");
     }
 }
