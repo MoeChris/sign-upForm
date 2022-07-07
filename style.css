@@ -9,7 +9,8 @@
 }
 
 body{
-    background:hsl(0, 100%, 74%),url('/images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+    background-image: url("/images/bg-intro-desktop.png");    
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -94,6 +95,7 @@ input[type="text"]:focus{
         
     }
     body{
-        background: url("/images/bg-intro-mobile.png"),hsl(0, 100%, 74%);
+        background-color: hsl(0, 100%, 74%);
+        background-image: url("/images/bg-intro-mobile.png");
     }
 }
